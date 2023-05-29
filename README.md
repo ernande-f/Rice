@@ -6,7 +6,7 @@
 How to install:
 
 ```
-git clone https://github.com/hnhx/rice.git
+git clone https://tildegit.org/ad4f/rice.git
 cd rice
 make
 sudo make install
