@@ -72,12 +72,16 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-b", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_gray1, "-sf", col_green, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *screenshotcmd[]  = { "screenshot", NULL };
+static const char *dolphincmd[] = { "dolphin", NULL };
+static const char *heliumcmd[] = { "helium.AppImage", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
  	{ MODKEY|ShiftMask,             XK_d, 	   spawn,          {.v = screenshotcmd } },
+	{ MODKEY,			XK_e,	   spawn,	   {.v = dolphincmd } },
+	{ MODKEY,			XK_n,	   spawn,	   {.v = heliumcmd} },
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },

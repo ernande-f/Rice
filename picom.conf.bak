@@ -18,7 +18,7 @@ fade-delta = 5;
 
 # Animações
 animations = true;
-animation-stiffness = 300;
+animation-stiffness = 200;
 animation-dampening = 25;
 animation-clamping = true;
 animation-mass = 1;
