@@ -19,6 +19,7 @@ all:
 	cp -f ./sxhkdrc ~/.config/sxhkd/
 	cp -f ./vimrc ~/.vimrc
 	feh --bg-scale ./bg.jpg
+	cp -f ./.fehbg ~/.fehbg
 
 install:
 
