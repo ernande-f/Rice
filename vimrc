@@ -9,5 +9,7 @@ Plug 'ap/vim-css-color'
 
 call plug#end()
 
+colorscheme sorbet
+
 nnoremap <C-p> :FZF<CR>
-nnoremap <C-S-p> :FZF /home<CR>
+nnoremap <C-S-p> :FZF .<CR>
