@@ -1,2 +1,5 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/ernan/wmi/rice/bg2.jpg' 
+
+BG_NUM=$((RANDOM % 4 + 1))
+
+feh --no-fehbg --bg-fill "/home/ernan/wmi/rice/bg${BG_NUM}.jpg"
