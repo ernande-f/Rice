@@ -1,5 +1,9 @@
 #!/bin/sh
 
-BG_NUM=$((RANDOM % 4 + 1))
+BG_NUM=$((RANDOM % 12 + 1))
 
-feh --no-fehbg --bg-fill "/home/ernan/wmi/rice/bg${BG_NUM}.jpg"
+if [ "$BG_NUM" -eq 6 ]; then
+  feh --no-fehbg --bg-max "/home/ernan/wmi/rice/wallpapers/bg6.jpg"
+else
+  feh --no-fehbg --bg-fill "/home/ernan/wmi/rice/wallpapers/bg${BG_NUM}.jpg"
+fi
